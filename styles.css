@@ -91,6 +91,7 @@ main {
     font-size: 20px;
     padding-top: 80px;
     text-align: center;
+     
 
  }
  .container:not(.fuente-acento){
@@ -148,6 +149,7 @@ ul, ol{
     height: auto;
     margin: auto;
     justify-content: center;
+    margin: 120px 0 0 0;
 }
 
 .seccion-oscura{
