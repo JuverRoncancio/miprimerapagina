@@ -88,6 +88,9 @@ main {
 
  .greeting{
     color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding-top: 80px;
+    text-align: center;
 
  }
  .container:not(.fuente-acento){
@@ -105,7 +108,7 @@ main {
 .sobre-mi{
     max-width: 450px;
     align-items: center;
-    margin: 120px 0 0 0;  
+    margin: 50px 0 0 0;  
     
 }
 
