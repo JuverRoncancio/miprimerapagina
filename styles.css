@@ -86,6 +86,10 @@ main {
     
  }
 
+ .greeting{
+    color: rgb(0, 0, 0);
+
+ }
  .container:not(.fuente-acento){
     display: flex;
     flex-wrap: wrap;
