@@ -1,0 +1,381 @@
+/* GENERALES*/
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* CABECERA */
+
+header {
+    position: fixed;
+    z-index: 1000;
+    background-color: #3E4E5E;
+    border-bottom: 5px solid #8a8a27 ;
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0px;
+    height: 90px;
+    width: 100%;      
+}
+
+h1 {
+    display: inline-block;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 20px 50px;
+}
+
+.barra_nav{
+    background-color: #3e4e5ecc;
+    height: 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*box-sizing: border-box;*/
+    text-align: right;
+    z-index: 9999;
+}
+
+nav ul.nav-links {
+    float: right;
+    margin:0;
+}
+
+.barra_nav li{
+    display: inline-block;
+    list-style: none;
+    padding: 7px 20px;
+    margin: 0 5px;
+    line-height: 80px;
+       
+}
+
+.barra_nav a {
+    color: #ffffff;
+    text-decoration: none ;
+    transition: color 0.5s ;
+    font-weight: bold;  
+}
+
+.barra_nav a:hover{
+    color: #CE6C37;
+}
+
+/*CUERPO*/
+
+.logo{
+    color: #CE6C37;
+}
+
+main {
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    padding: 20px 0px 0px 0px;
+    margin: 0;
+    border-bottom: 5px solid #8a8a27;
+    
+ }
+
+ .container:not(.fuente-acento){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+    padding: 10px 0;
+    margin: 0 auto; 
+    
+}
+
+.sobre-mi{
+    max-width: 450px;
+    align-items: center;
+    margin: 120px 0 0 0;  
+    
+}
+
+.sobre-mi .lista-lenguajes{
+    list-style: none;
+}
+
+.imagen-sobre-mi{
+    display: flex;
+    margin: 25px ;       
+}
+
+.img-miniaturas{
+
+    max-width:100%;
+    justify-content: center;
+    margin: 10px;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.presentacion, .lista-lenguajes{
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+    display: inline;
+}
+
+ul, ol{
+    font-size: 15px;
+    margin: 10px;
+    
+}
+
+.hobbies{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+}
+
+.seccion-oscura{
+    background-color: #61748a;
+    width: 100%;
+
+}
+
+.miniaturas{
+    max-width: 100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.minis1, .minis2, .minis3{
+    text-align: left;
+    max-width: 250px;
+    float: left;
+    padding: 30px;
+}
+
+.miniaturas h3{
+    text-align: left;
+    padding: 8px 0 ;
+}
+
+.texto-miniaturas{
+    height: 90px;
+}
+
+.fuente-acento{
+    color: #CE6C37;
+    font-weight: bold;
+}
+
+/*.container-habilidades{
+    clear:both;
+}*/
+
+footer { 
+    padding: 10px;
+    background-color: #849bb1;
+    font-size: 15px;
+    max-width: 100%;
+    text-align: center;
+}
+
+/*MENU*/
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: #f0f5f8;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/*FORMULARIO*/
+
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #f0f5f8;
+    border:#b0beca 1px solid;
+    border-radius: 4px;
+
+    width: 40%;
+    padding: 30px;
+    margin: 10px 0 20px 0;
+    
+}
+
+/*CAMPOS DE FORMUILARIO*/
+
+.casillas{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.casillas input[type="text"], .casillas input[type="email"] {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color:#d9e9f1;
+}
+
+.casillas label{
+    margin-bottom: 4px;
+    text-align: initial;
+
+}
+
+.casillas textarea{
+    background-color:#d9e9f1;
+    border-radius: 6px;
+    border: none;
+
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    resize: none;
+    
+}
+
+.casillas button{
+    background-color:#8aafda;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px 40px;
+    cursor: pointer
+}
+.casillas button:hover{
+    background-color: #cbdceb;
+}
+
+
+/*MEDIA QUERI*/
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+/*@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas
+  }*/
+
+  @media (max-width: 768px){
+    header {
+        background-color: #071422;
+    }
+    
+    .barra_nav{
+        background-color: #071422;
+        
+  }
+
+  .container .sobre-mi {
+    text-align: center;
+}
+
+.imagen-sobre-mi {
+    border-radius: 1000px;
+
+}
+
+.img-miniaturas{
+    margin: 5px;
+    border-radius: 1000px;
+  }
+
+.miniaturas{
+    flex-direction: row;
+    
+}
+
+.minis1, .minis2, .minis3{
+    max-width: 200px;
+    padding: 20px;
+    flex-wrap: wrap;
+ }
+
+.checkbtn{
+    display: block;
+}
+
+.barra_nav ul{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: #071422;
+    text-align:center;
+    top: 90px;
+    left: 100%;
+    transition: all 0.5s;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#check:checked ~ ul{
+    left: 0%;
+    display: block;
+    
+}
+
+.barra_nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+.barra_nav li a{
+    font-size: 20px;
+}
+
+
+/*ACTIVE*/
+
+.barra_nav .active{
+    height: 100vh;
+}
+
+#check:checked ~ .checkbtn{
+    color: #f17b3c;
+}
+
+footer{
+    position: relative;
+    z-index: 9999;
+    bottom: 0;
+}
+
+.formulario{
+    width: 80%;
+}
+
+}
+

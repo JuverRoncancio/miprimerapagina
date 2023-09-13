@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juver Roncancio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="barra_nav">
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a href="index.html" class="enlace">Inicio</a></li>
+                <li><a href="#seccion-principal">Sobre mi</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1 class="logo" id="logo">JUVER RONCANCIO</h1>
+    </header>
+    <main id="seccion-principal">
+        <section>
+
+            <div class="container">
+
+                <div class="sobre-mi">
+                    <h2 class="fuente-acento">Sobre mi</h2><br />
+                    <p class="presentacion">¡Hola! Soy Juver, tengo 28 años, soy de Colombia, actualment vivo en Bogotá y quiero aprender programación porque quiero cambiar mi rumbo profesional, quiero hacer parte del cambio que esta llevando el mundo
+                        desde hace algunas décadas. Sé que la profesión que quiero tomar de ahora en adelante me llevará
+                        a conocer personas y culturas interesantes. A continuación presento una lista de lenguajes que
+                        quiero
+                        aprender:
+                    </p> <br />
+                    <ul class="lista-lenguajes">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>NODE</li>
+                        <li>JAVA</li>
+                        <li>Entre muchos otros.</li>
+                    </ul>
+                </div>
+                <div class="imagen">
+                    <img src="./img/coding-924920_1280.jpg" width="300px" height="300px" alt="Pc con código"
+                        class="imagen-sobre-mi">
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-oscura">
+            <div class="container">
+                <div id="hobbies" class="hobbies">
+                    <h2 class="fuente-acento" id="title-hobbies">Hobbies</h2>
+
+                    <section class="miniaturas">
+
+                        <div class="minis1">
+                            <a href="https://netflix.com" target="_blank"><img src="./img/film-1668918_1280.jpg"
+                                    width="250px" height="150px" class="img-miniaturas"></a>
+                            <h3 class="fuente-acento">Ver peliculas</h3>
+                            <p class="texto-miniaturas">Me gusta ver peliculas los fines de semana, mis favoritas son
+                                las
+                                peliculas de comedia.</p>
+                            <a href="https://netflix.com" target="_blank">Leer más</a>
+                        </div>
+
+                        <div class="minis2">
+                            <a href="https://store.steampowered.com/?l=spanish" target="_blank"><img
+                                    src="./img/invader-42007_1280.png" width="250px" height="150px"
+                                    class="img-miniaturas"></a>
+                            <h3 class="fuente-acento">Videojuegos</h3>
+                            <p class="texto-miniaturas">En las noches me gusta jugar GTA V, Minecraft y Halo.</p>
+                            <a href="https://store.steampowered.com/?l=spanish" target="_blank">Leer más</a>
+                        </div>
+
+                        <div class="minis3">
+                            <a href="https://store.steampowered.com/?l=spanish" target="_blank"><img
+                                    src="./img/Perro.jpg" width="250px" height="150px" class="img-miniaturas"></a>
+                            <h3 class="fuente-acento">Mi perro</h3>
+                            <p class="texto-miniaturas">Mi perro me ayuda a relajarme y de paso me saca de la rutina.
+                            </p>
+                            <a href="https://store.steampowered.com/?l=spanish" target="_blank">Leer más</a>
+
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-habilidades">
+                <div>
+                    <h2 class="fuente-acento" id="title-habilidades">Habilidades</h2>
+                </div>
+
+                <div class="lista-habilidades">
+                    <ol>
+                        <li>Leer</li>
+                        <li>Jugar videojuegos</li>
+                        <li>Pasar tiempo con mi familia</li>
+                        <li>Jugar con mi perro</li>
+                        <li>Caminar</li>
+                        <li>Escuchar podcast</li>
+                        <li>Conocer lugares nuevos</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-oscura">
+        <div class="comentarios">
+            <h4 class="fuente-acento"><em>Comentarios</em></h4>
+        <form id="formulario" action="" method="get" class="formulario">
+            <div class="casillas">
+                <!--formulario para nombre-->
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Juver Roncancio" required>
+            </div>
+            <div class="casillas">
+                <!--formulario para email-->
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email" required placeholder="soyyo@email.com">
+            </div>
+            <div class="casillas">
+                <!--formulario para texto largo-->
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aqui..."></textarea>
+            </div>
+            <div class="casillas">
+                <!--Botón-->
+                <button>Enviar</button>
+            </div>
+        </form>
+    </div>
+</section>
+    </main>
+    <footer id="contacto" class="footer">
+        <h4>Contacto:</h4>
+        <a href="https://wa.me/573138680027" target="_blank">📱 WhatsApp</a><br>
+        <a href="mailto:jnroncanciop@gmail.com">✉ Correo</a><br>
+        <a href="https://www.linkedin.com/in/juver-nalllith-roncancio-pizza-36590b127/" target="_blank">💻
+            Linkedin</a>
+    </footer>
+
+</body>
+
+</html>
